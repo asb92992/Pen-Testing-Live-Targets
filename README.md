@@ -36,12 +36,14 @@ Cross - Site Request Forgery
 
 # Blue
 SQL Injection
-The blue site is vulnerable to SQL injection in the secion `/blue/public/staff/salespeople/show.php?id=` where the id can be use for the injection. 
+- The blue site is vulnerable to SQL injection in the secion `/blue/public/staff/salespeople/show.php?id=` where the id can be use for the injection. 
 
 By setting the id to `' OR SLEEP(3)=0--'` I was able to do SQL injection. The blue site allows to go to other users or obtain other users information with SQL injection as oppose to the green site that took the user back to the salperson page.
 
 ![SQL](https://user-images.githubusercontent.com/58159183/199128468-4d3e08d5-d31d-414f-8a2a-452bb71b7681.gif)
 
+Session Hijacking/Fixation
+- 
 
 
 
@@ -102,7 +104,9 @@ By setting the id to `' OR SLEEP(3)=0--'` I was able to do SQL injection. The bl
 
 
 
-Concept Review
+
+
+# Concept Review
 Which attacks were easiest to execute? Which were the most difficult?
 
 What is a good rule of thumb which would prevent accidentally username enumeration vulnerabilities like the one created here?
